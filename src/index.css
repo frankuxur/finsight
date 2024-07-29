@@ -1,0 +1,205 @@
+/* fonts */
+/* Inter Tight */
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* variables */
+:root {
+    /* colors */
+    --bg-1: #202124;
+    --bg-2: #28282C;
+    --bg-3: #1d1d1f;
+    --goshawk-gray: #444444;
+    --text-1: #ffffffde;
+    --text-2: #9aa0a6;
+    --text-3: #ededed;
+    --warning: #e84f4f;
+    --oopsie: #e8c44f;
+    --success: #14f070;
+    --white: #FEFEFE;
+    --silver: #CCCCCC;
+    --seasalt: #F6F6F6;
+    --snow: #FBF8FB;
+    --tanzanite-blue: #0f4a6d;
+    --teal: #0eaba8;
+
+    /* spacings */
+    --xxxs: 0.25rem;
+    --xxs: 0.5rem;
+    --xs: 0.625rem;
+    --s: 0.875rem;
+    --m: 1rem;
+    --l: 1.125rem;
+    --xl: 1.5rem;
+    --xxl: 2.625rem;
+    --xxxl: 3rem;
+
+    /* font sizes */
+    --font-xxs: 0.5rem; /* 8px */
+    --font-xs: 0.625rem; /* 10px */
+    --font-s: 0.875rem; /* 14px */
+    --font-m: 1rem; /* 16px */
+    --font-l: 1.125rem; /* 18px */
+    --font-xl: 1.5rem; /* 24px */
+    --font-xxl: 2.625rem; /* 42px */
+    --font-3xl: 3rem; /* 48px */
+
+    /* font weights */
+    --lighter: 200;
+    --light: 300;
+    --regular: 400;
+    --semi-bold: 500;
+    --bold: 600;
+    --bolder: 700;
+
+    /* others */
+    --content-width: 60rem;
+
+    /* font family */
+    --inter-tight: "Inter Tight", sans-serif;
+}
+
+
+/* reset */
+*, 
+*:before, 
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+  font-size: 16px;
+  font-weight: var(--regular);
+}
+
+body {
+  font-family: sans-serif;
+  font-family: var(--inter-tight);
+  background: var(--bg-1);
+  color: var(--text-1);
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+button, a {
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+  background-color: transparent;
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  color: inherit;
+  margin: 0;
+}
+
+fieldset, button, input, select, textarea, hr {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input, select, textarea {
+  background-color: transparent;
+  outline: none;
+  border: none;  
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+}
+
+video, canvas {
+  display: block;
+  width: 100%;
+}
+
+a, button {
+  color: inherit; 
+  -webkit-tap-highlight-color: transparent;
+}
+
+a { 
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(0 0 0 / 0.04);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+
+/* media query */
+@media (max-width: 1080px) {
+  :root {    
+    /* others */
+    --content-width: 100%;
+  }
+}
+
+
+
+
+
+/* media query */
+/* @media (max-width: 1200px) {
+
+}
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 880px) {
+
+}
+
+@media (max-width: 768px) {
+
+}
+
+@media (max-width: 640px) {
+
+}
+
+@media (max-width: 480px) {
+
+}
+
+@media (max-width:  320px) {
+
+} 
+*/

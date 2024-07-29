@@ -1,0 +1,41 @@
+.footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: var(--s);
+    background-image: linear-gradient(rgba(0 0 0 / 0), var(--bg-3));
+}
+
+.footer__author {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__author span {
+    font-size: var(--font-s);
+    color: var(--text-2);
+}
+   
+.footer__author a {
+    max-width: fit-content;
+    transition: 0.2s;
+}
+   
+.footer__author a:hover {
+    opacity: 0.2;
+}
+
+
+
+/* media query */
+@media (max-width: 480px) {
+    .footer__author span {
+        font-size: var(--font-xs);
+    }
+    
+    .footer__author a {
+        font-size: var(--font-s);
+    }
+
+}

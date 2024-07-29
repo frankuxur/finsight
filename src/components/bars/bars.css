@@ -1,0 +1,80 @@
+.bars {
+    height: 10rem;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.4;
+}
+
+.bars.bottom {
+    rotate: 0;
+    transform: rotate(180deg);
+    transform-origin: 50% 50%;
+    top: initial;
+    bottom: 0;
+    left: initial;
+}
+
+.bars div {
+    width: 2.2rem;
+    transition: 0.4s;
+    
+    /* border-radius was previously '0' */
+    /* border-radius: var(--xxxs); */
+}
+
+.bars.active > div {
+    filter: brightness(1.3);
+}
+
+.bars .a {
+    height: 100%;
+    background-color: #c4eaea17;
+}
+
+.bars .b {
+    height: 90%;
+    background-color: #eeeeee20;
+}
+
+.bars .c {
+    height: 80%;
+    background-color: #5d5d6089;
+}
+
+.bars .d {
+    height: 70%;
+    background-color: #c4eaea17;
+}
+
+.bars .e {
+    height: 60%;
+    background-color: #eeeeee20;
+}
+
+.bars .f {
+    height: 50%;
+    background-color: #5d5d6089;
+}
+
+.bars .g {
+    height: 40%;
+    background-color: #c4eaea17;
+}
+
+.bars .h {
+    height: 30%;
+    background-color: #eeeeee20;
+}
+
+.bars .i {
+    height: 20%;
+    background-color: #5d5d6089;
+}
+
+.bars .j {
+    height: 10%;
+    background-color: #c4eaea17;
+}

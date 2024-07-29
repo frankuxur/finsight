@@ -1,0 +1,8 @@
+.stats {
+    width: 100%;
+}
+
+.stats__content {
+    display: grid;
+    gap: var(--xxxl);
+}

@@ -1,0 +1,98 @@
+.drawer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 0 0 / 0);
+    display: flex;
+    align-items: flex-end;
+    transition:  1.2s 0.1s background-color;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.drawer.active {
+    background-color: rgba(0 0 0 / 0.4);
+    pointer-events: all;
+}
+
+.drawer__content {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(calc(100% + var(--xs)));
+    width: 30rem;
+    height: calc(100% - var(--xl));
+    background-color: var(--bg-1);
+    border-radius: var(--m);
+    padding: var(--xs);
+    margin: var(--xs);
+    transition: 0.8s 0.1s cubic-bezier(0.8, 0.2, 0.18, 0.96);
+    overflow: hidden auto;
+    overscroll-behavior: contain;
+}
+
+.drawer__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.01rem solid var(--goshawk-gray);
+    margin-bottom: var(--xs);
+    padding-bottom: var(--xxxs);
+}
+
+.drawer__title {
+    font-weight: var(--semi-bold);
+    font-size: var(--font-m);
+    opacity: 0.4;
+}
+
+.drawer__content.active {
+    transform: translateX(0);
+}
+
+.drawer__close-button {
+    background-color: var(--bg-2);
+    border-radius: 50%;
+    width: 1.6rem;
+    height: 1.6rem;
+    transition: 0.1s;
+    margin-bottom: var(--xxs);
+}
+
+.drawer__close-button:hover {
+    background-color: rgba(255 255 255 / 0.06);
+}
+
+
+/* .drawer__content::-webkit-scrollbar {
+    border-right: 0.1rem solid #2f323a;
+} */
+ 
+
+
+
+/* media query */
+@media (max-width: 640px) {
+    .drawer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .drawer__content {
+        position: static;
+        transform: translateX(calc(100% + var(--xs)));
+        width: 100%;
+        height: calc(100% - var(--xl));
+        background-color: var(--bg-1);
+        border-radius: var(--m);
+        padding: var(--xs);
+        margin: var(--xs);
+        transition: 0.8s 0.1s cubic-bezier(0.8, 0.2, 0.18, 0.96);
+        overflow: hidden auto;
+        overscroll-behavior: contain;
+    }
+
+}
